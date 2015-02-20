@@ -48,7 +48,7 @@ A k-neighbours algorithm, with k=4, is used to interpolate travel times between 
 
 ## Legalese
 
-The code is provided under the GPLv2.
+The code is provided under the Apache 2.0 license.
 Google indicates its API can only be used if results are displayed on a Google
 Map. So you know what to do with the generated KML.
 
