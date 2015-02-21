@@ -42,9 +42,11 @@ You may want to change settings :) In order to do this you have to edit timecont
 
 ## Inner working
 
-The program samples travel times on a rectangular grid. The grid is choosen so that the query budget (n_points) is exhausted and cells are almost square. Travel times depend on traffic, so make sure you run the program at a relevant time (i.e. by night for minimal travel times).
+The program samples travel times on a rectangular grid. The grid is choosen so that the query budget (n_points) is exhausted and cells are almost square. Travel times do not depend on traffic, so you may run the program whenever you want and get consistent results. Taking traffic into account requires a paid key.
 
 A k-neighbours algorithm, with k=4, is used to interpolate travel times between known samples. This is a bit overkill, since samples are regularly spaced and it would be quite easy to interpolate the values inside a rectangle. Still scikit-learn provides an immediate and more robust solution.
+
+Matplotlib is used to extract the contours lines, but without displaying them.
 
 ## Legalese
 
